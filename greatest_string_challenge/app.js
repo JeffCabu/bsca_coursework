@@ -9,7 +9,7 @@ const fallArray = [
 ]
 
 const halloween=(greatest)=>{
-    
+
     let greatestLengthSoFar = 0
     let indexOfWord = 0
 
@@ -26,3 +26,6 @@ const halloween=(greatest)=>{
     return `${greatest[indexOfWord]} has length ${greatestLengthSoFar}`
 }
 console.log(halloween(fallArray));
+
+
+
