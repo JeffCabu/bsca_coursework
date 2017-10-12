@@ -9,4 +9,9 @@ const pluralizer = (productsIn) => {
     return productsIn
 }
 
-console.log(pluralizer(products))
+//console.log(pluralizer(products))
+
+
+const pluralProducts = products.map(product => product + "s")
+
+console.log(pluralProducts)
