@@ -1,0 +1,10 @@
+.playerInfo {
+    border: solid 5px background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(maroon));
+    background-image: -webkit-linear-gradient(top, black, maroon);
+    background-image: -moz-linear-gradient(top, black, maroon);
+    background-image: linear-gradient(to bottom, black, maroon);
+    text-shadow: 3px 2px black;
+    color: darkorange;
+    text-align: center;
+    
+}

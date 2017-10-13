@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Baseball Vue</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+
+        <div id="app">
+
+            <div class="jumbotron">
+                <h1>{{ title }}</h1>
+            </div>
+
+            <div v-for="p in players" class="playerInfo">
+                <!-- <h3>Name: {{players[0].name}}Home Run Count:{{players[0].HR}}Team:{{players[0].team}}</h3> -->
+                <h3>{{p.name}}</h3>
+                <h3>Home runs: {{p.HR}}</h3>
+                <h3>Team: {{p.team}}</h3>
+                <img :src="p.img" alt="">
+            </div>
+
+        </div>
+
+        <script src="https://unpkg.com/vue"></script>
+        <script src="./app.js"></script>
+
+    </body>
+</html>
