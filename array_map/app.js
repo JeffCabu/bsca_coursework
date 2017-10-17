@@ -24,7 +24,7 @@ const pluralProducts = products.map(product => product + "s")
 
 //console.log(objectProducts)
 
-const numbers = [1,2,3,4,5,6,7,8,9];
+const numbers = [{name: "barry"},1, {name: "hank"},2,3,4,5,6,7,8,9];
 
 let doublesArray = []
 
@@ -65,10 +65,10 @@ const numbFunc = ( arr ) => {
 //console.log(numbFunc(numbers));
 
 const numbFuncMap = numbers.map(n => {
-    return {number: n * 2}
+    return {numbers: n * 2}
 })
 
-//console.log(numbFuncMap)
+console.log(numbFuncMap)
 
 
 const  numbsGreaterThanFive = (arr) => {
@@ -100,4 +100,4 @@ const mapAndFilterNumbers = numbers.filter( num => {
 }).map(i => {
     return {number: i}
 })
-console.log(mapAndFilterNumbers)
+//console.log(mapAndFilterNumbers)
