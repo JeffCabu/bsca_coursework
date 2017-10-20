@@ -1,0 +1,19 @@
+.monsters-container{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+    background:
+
+}
+.monster-card{
+    width: calc(33% -10px);
+    border: 3px solid background-image: -webkit-gradient(linear, left top, left bottom, from(darkred), to(black));
+    background-image: -webkit-linear-gradient(top, darkred, black);
+    background-image: -moz-linear-gradient(top, darkred, black);
+    background-image: linear-gradient(to bottom, darkred, black);
+}
+.monster-card img{
+    max-width: 100%;
+    max-height: 80%;
+    padding: 10px;
+}
