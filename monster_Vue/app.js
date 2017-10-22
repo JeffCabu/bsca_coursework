@@ -36,6 +36,7 @@ const monsterVue = {
             const monster = new Monster(name, diet, image)
 
             this.monsters.push(monster)
+            
             this.newMonsterName = ""
             this.newMonsterImg = ""
             this.newMonsterDiet = ""
