@@ -11,6 +11,7 @@ const Jhin = new LeagueChampion("Jhin", ["Assassin, Marksman"], 2, "http://qtopt
 const Jayce = new LeagueChampion("Jayce", ["Fighter, Marksman"], 2, "https://vignette.wikia.nocookie.net/leagueoflegends/images/8/89/Jayce_OriginalSkin.jpg/revision/latest?cb=20170615214603" );
 const Leona = new LeagueChampion("Leona", ["Support, Tank"], 1, "https://vignette.wikia.nocookie.net/leagueoflegends/images/3/3e/Leona_OriginalSkin.jpg/revision/latest?cb=20170621202639");
 const Warwick = new LeagueChampion("Warwick", ["Fighter, Tank"], 1, "https://vignette.wikia.nocookie.net/leagueoflegends/images/6/6c/Warwick_OriginalSkin.jpg/revision/latest?cb=20170110203842");
+//////////------VS------//////////
 const Ahri = new LeagueChampion("Ahri", ["Assassin, Mage"], 2, "https://vignette.wikia.nocookie.net/leagueoflegends/images/3/33/Ahri_OriginalSkin.jpg/revision/latest?cb=20170615201440");
 const Illaoi = new LeagueChampion("Illaoi", ["Fighter, Tank"], 2, "https://vignette.wikia.nocookie.net/leagueoflegends/images/0/0b/Illaoi_OriginalSkin.jpg/revision/latest?cb=20170616230710");
 const Alistar = new LeagueChampion("Alistar", ["Support", "Tank"], 1, "https://vignette.wikia.nocookie.net/leagueoflegends/images/5/54/Alistar_OriginalSkin.jpg/revision/latest?cb=20170615212010");
@@ -19,8 +20,10 @@ const Ashe = new LeagueChampion("Ashe", ["Support, Marksman"], 1, "https://vigne
 
 const champions = []
 const championsTwo = []
+
 champions.push(Orianna, Jhin, Jayce, Leona, Warwick)
 championsTwo.push(Ahri, Illaoi, Alistar, Maokai, Ashe)
+
 console.log(champions)
 
 const leagueChampionVue = {
