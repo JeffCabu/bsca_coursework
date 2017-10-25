@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <div class="control">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,65 @@
         <link rel="stylesheet" href="style.css"> 
         <title>Object Constructor Vue</title>
     </head>
-
     
     <body>
-        Hi!
+
+        <div class="container" id="league-app">
+            
+            <div class="jumbotron">
+                <h1>{{title}}</h1>
+            </div>
+
+            <div class="league-container">
+
+
+                <div class="test">
+
+                    <div v-for="c in champions" class="Team One">
+                        <img :src="c.img" alt="">
+                        <h3>{{c.name}}</h3>
+                            
+                        <div class="tOneChamp">
+                            <h5>Suggested roles</h5>
+                                <span v-for="r in c.role">
+                                        {{r}}
+                                </span>
+                                
+                                <h6>
+                                    Level of difficulty to use: {{c.difficulty}}
+                                </h6>
+                        </div>
+                            
+                    </div>
+
+                </div>
+
+
+                <div class="gamemode"><h2>VS</h2></div>
+
+                
+                <div class="test2">
+                    <div v-for="cT in championsTwo" class="Team Two">
+                        <h3>{{cT.name}}</h3>
+                        <img :src="cT.img" alt="">
+
+                        <div class="tTwoChamp">
+                            <h5>Suggested roles</h5>
+                            <span v-for="r in cT.role">
+                                    {{r}}
+                            </span>
+                            <h6>Level of difficulty to use: {{cT.difficulty}}</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </body>
     <script src="https://unpkg.com/vue"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <script src="Vue.js"></script>
+    </div>
 </html>
